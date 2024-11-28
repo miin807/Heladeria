@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="234dp"
+        android:layout_height="378dp"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="43dp"
+        android:layout_marginEnd="97dp"
+        android:layout_marginBottom="26dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/enviar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/vainilla"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:text="Vainilla" />
+
+        <EditText
+            android:id="@+id/numeroVainilla"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="number" />
+
+        <TextView
+            android:id="@+id/chocolate"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:text="Chocolate" />
+
+        <EditText
+            android:id="@+id/numeroChocolate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="number" />
+
+        <TextView
+            android:id="@+id/fresa"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:text="Fresa" />
+
+        <EditText
+            android:id="@+id/numeroFresa"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="number" />
+
+        <Spinner
+            android:id="@+id/recipiente"
+            android:layout_width="match_parent"
+            android:layout_height="49dp" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/enviar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="147dp"
+        android:layout_marginEnd="176dp"
+        android:layout_marginBottom="236dp"
+        android:text="Enviar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
